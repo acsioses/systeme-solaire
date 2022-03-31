@@ -1,0 +1,222 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(fond-systeme-solaire.jpg) top center no-repeat;
+    background-color: #02080d;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 20px;
+}
+.glowing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 875px;
+    height: 875px;
+}
+.glowing span{
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.glowing span:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #ff0;
+    border-radius: 50%;
+}
+.glowing span:nth-child(1){
+    top: 432px;
+    left: 437.5px;
+}
+.glowing span:nth-child(1):before{
+    background: rgba(225,214,0.1);
+    box-shadow: 0 0 20px rgba(225,214,0.1),
+                0 0 20px rgba(225,214,0.1),
+                0 0 40px rgba(225,214,0.1),
+                0 0 60px rgba(225,214,0.1),
+                0 0 80px rgba(225,214,0.1),
+                0 0 100px rgba(225,214,0.1),
+                0 0 0 4px rgba(225,214,0.1);
+}
+.glowing span:nth-child(2){
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 11s linear infinite;
+}
+.glowing span:nth-child(2):before{
+    background: rgb(145, 145, 145);
+    box-shadow: 0 0 20px rgb(145, 145, 145),
+                0 0 20px rgb(145, 145, 145),
+                0 0 40px rgb(145, 145, 145),
+                0 0 60px rgb(145, 145, 145),
+                0 0 80px rgb(145, 145, 145),
+                0 0 0 4px rgb(145, 145, 145);
+}
+.glowing span:nth-child(3){
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 10s linear infinite;
+}
+.glowing span:nth-child(3):before{
+    background: rgb(0, 110, 255);
+    box-shadow: 0 0 20px rgb(0, 110, 255),
+                0 0 20px rgb(0, 110, 255),
+                0 0 40px rgb(0, 110, 255),
+                0 0 60px rgb(0, 110, 255),
+                0 0 80px rgb(0, 110, 255),
+                0 0 0 4px rgb(0, 110, 255);
+}
+.glowing span:nth-child(4){
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 9s linear infinite;
+}
+.glowing span:nth-child(4):before{
+    background: rgba(0,226,255);
+    box-shadow: 0 0 20px rgba(0,226,255),
+                0 0 20px rgba(0,226,255),
+                0 0 40px rgba(0,226,255),
+                0 0 60px rgba(0,226,255),
+                0 0 80px rgba(0,226,255),
+                0 0 0 4px rgba(0,226,255);
+}
+.glowing span:nth-child(5){
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 8s linear infinite;
+}
+.glowing span:nth-child(5):before{
+    background: #d6a350;
+    box-shadow: 0 0 20px #d6a350,
+                0 0 20px #d6a350,
+                0 0 40px #d6a350,
+                0 0 60px #d6a350,
+                0 0 80px #d6a350,
+                0 0 0 4px #d6a350;
+}
+.glowing span:nth-child(6){
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 7s linear infinite;
+}
+.glowing span:nth-child(6):before{
+    background: #C6AD94;
+    box-shadow: 0 0 20px #C6AD94,
+                0 0 20px #C6AD94,
+                0 0 40px #C6AD94,
+                0 0 60px #C6AD94,
+                0 0 80px #C6AD94,
+                0 0 0 4px #C6AD94;
+}
+.glowing span:nth-child(7){
+    top: 250px;
+    left: 250px;
+    right: 250px;
+    bottom: 250px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 6s linear infinite;
+}
+.glowing span:nth-child(7):before{
+    background: rgba(255, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 0, 0),
+                0 0 20px rgba(255, 0, 0),
+                0 0 40px rgba(255, 0, 0),
+                0 0 60px rgba(255, 0, 0),
+                0 0 80px rgba(255, 0, 0),
+                0 0 0 4px rgba(255, 0, 0);
+}
+.glowing span:nth-child(8){
+    top: 300px;
+    left: 300px;
+    right: 300px;
+    bottom: 300px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 5s linear infinite;
+}
+.glowing span:nth-child(8):before{
+    background: rgb(57, 255, 222);
+    box-shadow: 0 0 20px rgb(57, 255, 222),
+                0 0 20px rgb(57, 255, 222),
+                0 0 40px rgb(57, 255, 222),
+                0 0 60px rgb(57, 255, 222),
+                0 0 80px rgb(57, 255, 222),
+                0 0 0 4px rgb(57, 255, 222);
+}
+.glowing span:nth-child(9){
+    top: 350px;
+    left: 350px;
+    right: 350px;
+    bottom: 350px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 4s linear infinite;
+}
+.glowing span:nth-child(9):before{
+    background: #F3D8C7;
+    box-shadow: 0 0 20px #F3D8C7,
+                0 0 20px #F3D8C7,
+                0 0 40px #F3D8C7,
+                0 0 60px #F3D8C7,
+                0 0 80px #F3D8C7,
+                0 0 0 4px #F3D8C7;
+}
+.glowing span:nth-child(10){
+    top: 400px;
+    left: 400px;
+    right: 400px;
+    bottom: 400px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: animate-planete 3s linear infinite;
+}
+.glowing span:nth-child(10):before{
+    background: rgb(185, 185, 185);
+    box-shadow: 0 0 20px rgb(185, 185, 185),
+                0 0 20px rgb(185, 185, 185),
+                0 0 40px rgb(185, 185, 185),
+                0 0 60px rgb(185, 185, 185),
+                0 0 80px rgb(185, 185, 185),
+                0 0 0 4px rgb(185, 185, 185);
+}
+@keyframes animate-planete{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-planete-reverse{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
